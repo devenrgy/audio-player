@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Devenrgy Radio - Music of the future</title>
+  <link rel="icon" type="image/ico" href="/assets/favicon/favicon.ico">
+  <link rel="stylesheet" href="assets/css/app.min.css">
+  <script src="assets/js/app.js" type="module" defer></script>
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<div class="logo">
+  <img class="logo__img" src="assets/svg/logo.svg" alt="Devenrgy Radio Logo" width="100">
+</div>
+
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <h1 class="header__title"><span class="header__title-name" data-text="Devenrgy">Devenrgy</span><span
+          class="header__title-accent">Radio</span></h1>
+      <p class="header__text">#musicofthefuture</p>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="player">
+    <div class="container">
+      <div class="player__inner">
+        <div class="player__cassette">
+          <div class="player__cassette-bg">
+            <img class="player__cassette-img" src="assets/img/cassette-body.png" alt="Cassette">
+            <div class="player__cassette-cover"></div>
+            <div class="player__cassette-reels player__cassette-reels--paused">
+              <span class="player__cassette-reel player__cassette-reel--left">
+                <img src="assets/img/cassette-reel.png" alt="Reel left">
+              </span>
+              <span class="player__cassette-reel player__cassette-reel--right">
+                <img src="assets/img/cassette-reel.png" alt="Reel right">
+              </span>
+            </div>
+          </div>
+
+          <div class="player__controls">
+            <button class="player__controls-button player__controls-button--prev" type="button" data-text="prev">Prev
+            </button>
+            <button class="player__controls-button player__controls-button--play" type="button" data-text="play">
+              Play/Pause
+            </button>
+            <button class="player__controls-button player__controls-button--next" type="button" data-text="next">Next
+            </button>
+          </div>
+        </div>
+
+        <div class="player__display">
+          <h2 class="player__title">BIODRIVE - The Awakening</h2>
+
+          <div class="player__time">
+            <div class="player__time-count">
+              <span class="player__time-elapsed">0:00</span>
+              /
+              <span class="player__time-total">0:00</span>
+            </div>
+            <label><input class="player__time-range" type="range" max="100" step="1" value="0"></label>
+          </div>
+
+          <div class="player__volume">
+            <button class="player__volume-mute">Mute</button>
+            <label><input class="player__volume-range" type="range" min="0" max="1" step="0.1" value="0.1"></label>
+            <span class="player__volume-level"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <ul class="footer__list">
+        <li class="footer__item">2023</li>
+        <li class="footer__item">
+          <a class="footer__link" href="https://rs.school/js-stage0/" target="_blank">
+            <img src="assets/svg/rs-logo.svg" width="100" alt="RSSchool website">
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="https://github.com/devenrgy" target="_blank">
+            <img src="assets/svg/github.svg" width="30" alt="Devenrgy Github Profile">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
